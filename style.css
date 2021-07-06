@@ -1,2 +1,86 @@
-ul {list-style-type: none
-    ;}
+
+body{
+    font-family: Raleway,  sans-serif;
+}
+ header nav{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+   
+}
+nav img{
+    width: 100px;
+}
+
+ nav div{
+    display: flex;
+    margin: 10px 50px 10px 0px;
+    flex-wrap: wrap;
+    
+}
+ a{
+   text-decoration: none; 
+   color: #0065fc;    
+}
+
+
+
+
+/* header #seulement-sur-ordi img {
+    width: 100px;
+   
+}
+header #seulement-sur-ordi div {
+    display: flex;
+    justify-content: space-between;  
+}
+header #seulement-sur-ordi  nav div{
+    justify-content: space-between;
+    margin: 0px 10px 0 20px; */
+/* }
+.hébergements{
+    display: flex;
+    flex-wrap: wrap;
+}    */
+
+
+
+/* .populaires div {
+    display: flex;
+    justify-content: space-between ;
+    margin: 5px 5px 5px 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid brown;     
+  background-color: rgb(36, 235, 235);
+} */
+/*      
+  section img{
+      width: 250px;
+      justify-content: center;
+  } 
+
+.activités{
+    display: flex;
+}
+header #seulement-en-mobile{
+    display: none;
+}
+
+ul {list-style-type: none; color: black; }*/
+
+/*footer*/
+footer{
+    display: flex;
+   justify-content: space-around ;
+   background-color: cornflowerblue;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+ 
