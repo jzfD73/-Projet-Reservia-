@@ -84,7 +84,7 @@ li{
     padding-bottom: 40px;
 }
 
-/*<MAIN>*/
+/* MAIN - TITRE - SEARCHBAR- */
 
 h1 {
     padding-top: 20px ;
@@ -125,7 +125,7 @@ h1 {
     border-bottom-right-radius: 15px;
 }
 
-    
+  /* FILTERS */  
 
 .filters{
     margin-top: 5px;
@@ -156,10 +156,60 @@ h1 {
     padding-right: 20px ;
 }
 
+/* ATTRIBUTS - lINKS */
+
 .links-sections{
     text-decoration: none;
     color: black;
 }
 
+/* MAIN - SECTION - HEBERGEMENTS A  MARSEILLE*/
+
+.section-one{
+    background-color: turquoise;
+    /* margin: 20px ; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1{
+    background-color: #F2F2F2;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 800px;
+    justify-content: space-around;
+}
+.by-price{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 25px;
+    justify-content: space-around;
+}
 
 
+
+.photos{
+    width: 200px;
+}
+.by-stars{
+    display: flex;
+    justify-content: space-around;
+}
+.container2{
+    background-color: #F2F2F2;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 400px;
+}
+
+.section-two{
+    background-color: mediumturquoise;
+    width: 1290px;
+    /* margin: 20px; */
+}
+
+.container3{
+    display: flex;
+    justify-content: space-between;
+   
+}
