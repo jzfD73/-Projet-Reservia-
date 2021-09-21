@@ -166,7 +166,7 @@ h1 {
 /* MAIN - SECTION - HEBERGEMENTS A  MARSEILLE*/
 
 .section-one{
-    background-color: turquoise;
+    /* background-color: turquoise; */
     /* margin: 20px ; */
     display: flex;
     justify-content: space-around;
