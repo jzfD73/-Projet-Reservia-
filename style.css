@@ -163,32 +163,50 @@ h1 {
     color: black;
 }
 
-/* MAIN - SECTION - HEBERGEMENTS A  MARSEILLE*/
+/* MAIN - SECTION One - HEBERGEMENTS A  MARSEILLE*/
 
 .section-one{
-    background-color: turquoise;
+    /* background-color: turquoise; */
     /* margin: 20px ; */
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
+h2{
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    padding: 20px;
+}
+h3{
+    padding-left: 20px;
+    padding-top: 35px;
+}
 
 .container1{
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     /* border: 2px solid black; */
     border-radius: 25px;
     width: 850px;
     height: 620px;
     padding: 10px;
     justify-content: space-around;
+    
 }
 .thumbnailsC1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 25px;
+    border: 5px solid white;
     width: 250px;
     height: 200px;
-    
     background-color: white;
+    box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray;
+    
+}
+}
+.infos-th-C1{
+    padding-left: 20px;
+    padding-top: 15px;
     
 }
 .by-price{
@@ -207,43 +225,74 @@ h1 {
 
 .photosC1{
     width: 100%;
-    height: 70%;
+    height: 100px;
     padding-top: 0px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
+    object-position: center left;
 }
-/* MAIN - SECTION - LES PLUS POPULAIRES */
+.icons-starsC1{
+    padding-top: 15px;
+}
+/* MAIN - SECTION One - LES PLUS POPULAIRES */
 
 .container2{
-    background-color: #F2F2F2;
-    border: 2px solid black;
+    background-color: #f2f2f2;
     border-radius: 25px;
     width: 400px;
     height: 620px;
     padding: 20px;
-    /* flex-direction: column; */
-    /* justify-content: space-around; */
+   
 }
+.thumbnailsC2 .links-sections {
+    display: flex; 
 
+}
 .thumbnailsC2{
-    width: 350px;
+    width: 320px;
     height: 150px;
-
+    border: 5px solid white;
+    border-radius: 25px;
     justify-content: space-between;
-    border: 2px solid black;
-    margin: 10px;   
+    /* border: 2px solid black; */
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px; 
+    background-color: white;
+    box-shadow: 2px 2px 5px lightgray ;  
 }
+
 
 .photosC2{
-    width: 100%;
-    height: 50%;
+    width: 35%;
+    height: 140px;
     padding-top: 0px;
-    /* border-top-left-radius: 25px; */
-    /* border-bottom-left-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
+.infos-th-C2{
+    padding-left: 20px;
+    padding-top: 15px;   
+}
+.price{
+    padding-top: 10px;
+}
+
+.icons-starsC2{
+   padding-top: 35px;
+}
+
+
+
+/*MAIN - SECTION Two - ACTIVITES*/
+
+
 .section-two{
-    background-color: mediumturquoise;
+    /* background-color: mediumturquoise; */
     width: 1290px;
     /* margin: 20px; */
 }
@@ -251,8 +300,55 @@ h1 {
 .container3{
     display: flex;
     justify-content: space-between;
-   
+    width: 1290px;
+    height: 500px;   
 }
+
+.thumbnailsC3{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.photosC3{
+    width: 80%;
+    height: 450px;
+    border-radius: 25px;
+    object-fit: cover;
+    
+}
+.thumbnailsC4{
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid black;
+
+}
+.photosC4{
+    width: 300px;
+    height: 200px ;
+    border-radius: 25px;
+}
+
+.thumbnailsC5{
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid black;
+
+}
+.photosC5{
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.tnumbnailsC6{
+    width: 300px;
+}
+
+.tnumbnailsC7{
+    width: 300px;
+}
+
 
 /* FOOTER */
 
