@@ -3,13 +3,25 @@
      padding: 0;
      box-sizing: border-box;
  }
+
+ @font-face {
+    font-family: "Reservia";
+    src: url("police/Raleway-VariableFont_wght.ttf") format("truetype");
+   }
    
 body{
-    font-family: Raleway, sans-serif;
-    margin-left: 20px;
+    /* font-family: Raleway, sans-serif; */
+    font-family: Reservia;
+    /* margin-left: 20px; */
 
 }
+
+
 /*HEADER*/
+
+main{
+    margin-left: 20px;
+}
 
 .navbar {
     display: flex;
@@ -43,23 +55,23 @@ li{
 
 .navbar-links:hover{
     color:  #0065fc;
-    border-top: 2px solid #0065fc;
-   
+    border-top: 2px solid #0065fc;  
 }   
 
 
 .accomodation-link {
     /* margin: 20px; */
-    border-top: 2px solid #0065fc;   
+    border-top: 2px solid white;
+    color: black;   
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
 }
-.accomodation-link:hover{
+/* .accomodation-link:hover{
     color:  #0065fc;
     border-top: 2px solid #0065fc;
-}
+} */
 
 .activities-link {
     /* margin: 20px; */
@@ -81,6 +93,7 @@ li{
     padding-right: 30px;
     padding-bottom: 40px;
 }
+
 
 /* MAIN - TITRE - SEARCHBAR- */
 
@@ -143,7 +156,7 @@ h1 {
 
 
 .filter{ 
-    border: 2px solid #bebcbc;
+    border: 2px solid #deebff;
     border-radius: 50px;
     margin: 0px 20px;
     padding-top: 10px;
@@ -168,9 +181,14 @@ h1 {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 h2{
     padding: 20px;
+}
+
+h4{
+    font-weight: bold;
 }
 .more-for-C1{
     padding-left: 20px;
@@ -221,17 +239,28 @@ h2{
     object-fit: cover;
     object-position: center left;
 }
+.icons-stars-color-blue{
+    color: #0065fc;
+}
+.icons-stars-color-gray{
+    color: #deebff;
+}
 .icons-starsC1{
-    padding-top: 15px;
+    padding-top: 10px;
 }
 /* MAIN - SECTION One - LES PLUS POPULAIRES */
 
+/* #activties{
+    padding-left: 5px;
+} */
 .container2{
     background-color: #f2f2f2;
     border-radius: 25px;
     width: 400px;
     height: 620px;
     padding: 20px;  
+    /* display: flex;
+    flex-wrap: wrap-reverse; */
 }
 
 .thumbnailsC2 .links-sections {
@@ -276,7 +305,7 @@ h2{
 }
 
 .icons-starsC2{
-   padding-top: 35px;
+   padding-top: 30px;
 }
 
 
@@ -286,6 +315,7 @@ h2{
 
 .section-two{
     width: 1290px;
+    padding-left: 20px;
 }
 
 .container3{
@@ -389,7 +419,7 @@ h2{
 /* ANIMATIONS IMAGES */
 
 .thumbnails-zoom-effect{
-    transition: transform .1s;
+    transition: transform .500ms;
 } 
 .thumbnails-zoom-effect:hover{
     transform:  scale(1.05);
@@ -399,9 +429,10 @@ h2{
 
 .footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #f2f2f2;
     margin-top: 20px;
+    
 }
 
 .navfooter{
@@ -417,4 +448,14 @@ h2{
 }
 .navfooter .links-sections{
     padding-top:10px ;
+}
+/* .about{
+    padding-left: 20px;
+}
+.rentals{
+    padding-left: 50px;
+}
+.help{
+    padding-right: 10px;
+    padding-left: 50px; */
 }
