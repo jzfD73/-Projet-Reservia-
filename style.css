@@ -31,9 +31,8 @@ main{
 }
 
 .logo{
-    width: 100px;
-    padding-top: 20px;
-    padding-left: 20px;
+    width: 150px;
+    padding-left: 40px;
 }
 
 ul{
@@ -68,13 +67,9 @@ li{
     padding-right: 20px;
     padding-bottom: 40px;
 }
-/* .accomodation-link:hover{
-    color:  #0065fc;
-    border-top: 2px solid #0065fc;
-} */
+
 
 .activities-link {
-    /* margin: 20px; */
     border-top: 2px solid white ;
     color: black;
     padding-top: 50px;
@@ -83,7 +78,6 @@ li{
     padding-bottom: 40px;
 }
 .registration-link {
-    /* margin: 20px; */
     border-top: 2px solid white;
     font-weight: bold;
     color: #0065fc;
@@ -154,8 +148,12 @@ h1 {
     padding-bottom: 10px;
 }
 
+.links-sections{
+    text-decoration: none;
+    color: black;
+}
 
-.filter{ 
+/* .filter{ 
     border: 2px solid #deebff;
     border-radius: 50px;
     margin: 0px 20px;
@@ -163,17 +161,33 @@ h1 {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px ;
+} */
+.filter{
+    border: 2px solid #deebff;
+    border-radius: 50px;
+    margin: 0px 20px;
+    padding-right: 20px;
 }
+.filter-icons-color{
+    color: #0065fc;
+    background-color: #deebff;
+    border: 2px solid #deebff;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+
+  /* INFORMATION */
+
 .information{
     padding-left: 20px;
 }
 
 /* ATTRIBUTS - lINKS */
 
-.links-sections{
-    text-decoration: none;
-    color: black;
-}
+
 
 /* MAIN - SECTION One - HEBERGEMENTS A  MARSEILLE*/
 
@@ -223,11 +237,13 @@ h4{
     border-radius: 25px;
     justify-content: space-around;
     padding-bottom: 25px;
+   
 }
 
 .by-stars{
     display: flex;
     justify-content: space-around;
+    
 }
 
 .photosC1{
@@ -239,15 +255,7 @@ h4{
     object-fit: cover;
     object-position: center left;
 }
-.icons-stars-color-blue{
-    color: #0065fc;
-}
-.icons-stars-color-gray{
-    color: #deebff;
-}
-.icons-starsC1{
-    padding-top: 10px;
-}
+
 /* MAIN - SECTION One - LES PLUS POPULAIRES */
 
 /* #activties{
@@ -261,6 +269,11 @@ h4{
     padding: 20px;  
     /* display: flex;
     flex-wrap: wrap-reverse; */
+}
+.title-icon-C2{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .thumbnailsC2 .links-sections {
@@ -308,6 +321,15 @@ h4{
    padding-top: 30px;
 }
 
+.icons-stars-color-blue{
+    color: #0065fc;
+}
+.icons-stars-color-gray{
+    color: #deebff;
+}
+.icons-starsC1{
+    padding-top: 10px;
+}
 
 
 /*MAIN - SECTION Two - ACTIVITES*/
@@ -449,13 +471,4 @@ h4{
 .navfooter .links-sections{
     padding-top:10px ;
 }
-/* .about{
-    padding-left: 20px;
-}
-.rentals{
-    padding-left: 50px;
-}
-.help{
-    padding-right: 10px;
-    padding-left: 50px; */
-}
+
