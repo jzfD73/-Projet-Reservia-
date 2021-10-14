@@ -127,6 +127,7 @@ h1 {
     display: flex;
 }
 .searchbar input{
+    outline: none;
     width: 350px;
     border: none;
     border-bottom: 1px solid #f2f2f2;
@@ -137,6 +138,9 @@ h1 {
     color: black;
     padding-left: 20px;
 } 
+.searchbar input::placeholder{
+    color: black;
+}
 
   
 .searchbar button{
@@ -248,8 +252,9 @@ h4{
 .container1{
     background-color: #f2f2f2;
     border-radius: 25px;
-    width: 850px;
-    height: 620px;
+    /* width: 850px; */
+    width: 65%;
+    /* height: 620px; */
     padding: 10px;
     justify-content: space-around;
     /* flex-wrap: wrap; */
@@ -257,7 +262,8 @@ h4{
 .thumbnailsC1{
     border-radius: 25px;
     border: 5px solid white;
-    width: 250px;
+    width: calc(100% / 3 - 25px);
+    margin-bottom: 25px;
     height: 200px;
     background-color: white;
     box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray;
@@ -274,7 +280,7 @@ h4{
     border-radius: 25px;
     justify-content: space-around;
     padding-bottom: 25px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
    
 }
 
@@ -304,8 +310,9 @@ h4{
 .container2{
     background-color: #f2f2f2;
     border-radius: 25px;
-    width: 400px;
-    height: 620px;
+    /* width: 400px; */
+    width: 33%;
+    /* height: 620px; */
     padding: 20px;  
     display: flex;
     flex-wrap: wrap;
@@ -518,7 +525,48 @@ h4{
 
 /* RESPONSIVE */
 
+@media all and (max-width: 479px){
+    body{
+        width: 100%;
+    }
+    .section-one{
+        flex-direction: column-reverse;
+    }
+    .container1{
+        width: 100%;
+        background-color: white;
+    }
+    .container2{
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: initial;
+    }
 
+    .by-price{
+        /* flex-wrap: wrap; */
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .thumbnailsC1{
+        width: 87%;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    
+    
+    
+}
+@media all and (min-width: 479px) and (max-width: 768px){
+    body{
+        /* background: red; */
+    }
+}
+@media all and (min-width: 768px) and (max-width:1440PX){
+    body{
+        /* background: green; */
+    }
+}
     
 
 
