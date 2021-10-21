@@ -38,6 +38,7 @@ main{
 ul{
     display: flex;
     flex-wrap: wrap;
+
 }
 
 li{
@@ -50,6 +51,7 @@ li{
 .navbar-links {
     text-decoration: none;
     color: #0065fc;
+
 }
 
 .navbar-links:hover{
@@ -69,7 +71,9 @@ li{
 }
 .navbars-links1{
     display: flex;
+    
 }
+
 
 
 
@@ -527,11 +531,15 @@ h4{
 
 /* RESPONSIVE */
 
-@media all and (min-width: 310px) and (max-width: 479px){
+@media all and (min-width: 310px) and (max-width: 768px){
     body{
         margin: none;
         width: 100%;
-    }#desktop{
+    }
+    main{
+        margin-left: 0px;
+    }
+    #desktop{
         display: none;
     }
     .navbars-links1{
@@ -539,11 +547,16 @@ h4{
         justify-content: space-around;
         width: 100%;
     }
+    .navlink{
+        width: 50%;
+    }
     .reg-act-links{
-        padding-left: 63px;
-        padding-right: 78px;
+        /* padding-left: 63px; */
+        /* padding-right: 75px; */
         border-bottom: 3px solid #f2f2f2;
-        font-weight: 800;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
     }
     .navbar-links:hover{
         border-top: 2px solid white;
@@ -591,6 +604,7 @@ h4{
 
     .section-one{
         flex-direction: column-reverse;
+        padding: 0px;
     }
     .container1{
         width: 100%;
@@ -649,9 +663,7 @@ h4{
 
 }
 @media all and (min-width: 479px) and (max-width: 768px){
-    body{
-        /* background: red; */
-    }
+    
     #mobile{
         display: none;
     }
@@ -660,9 +672,7 @@ h4{
     }
 }
 @media all and (min-width: 768px) and (max-width:1440PX){
-    body{
-        /* background: green; */
-    }
+    
     #mobile{
         display: none;
     }
@@ -670,7 +680,7 @@ h4{
         display: none;
     }
 }
-}
+
 
 
 
