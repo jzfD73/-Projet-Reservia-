@@ -15,7 +15,7 @@
 	<title>Reservia</title>
 </head>
 <body>
-	<header>			
+	<header id="desktop">			
 		<nav class="navbar">
 			<img class="logo" src="images\logo\Reservia@3x.png" alt="logo Reservia">
 				<ul class="">
@@ -30,6 +30,22 @@
 		</nav>
 		
 	</header>
+	<header id="mobile">			
+		<nav class="navbar">
+			<img class="logo" src="images\logo\Reservia@3x.png" alt="logo Reservia">
+			<div class="navbars-links2">
+				<li><a class=" registration-link"href="#">S'inscrire</a></li>
+			</div>
+				<ul class="">
+					<div class="navbars-links1">
+						<li><a class="navbar-links accomodation-link reg-act-links" href="#accomodations">Hébergements</a></li>
+						<li><a class="navbar-links activities-link reg-act-links" href="#activities">Activités</a></li>
+					</div>
+					
+				</ul>	
+		</nav>
+		
+	</header>
 	
 	<main>
 		<div>
@@ -39,9 +55,9 @@
 		<div class="searchbar">
 			<i class="fas fa-map-marker-alt icon-location"></i>
 			<input type="text" placeholder ="Marseille, France"/>
-			<button type="submit">Rechercher</button>
-			<i class="fas fa-search"></i>
-			<!-- <button id="mobile" type="submit" i class="fas fa-search"></i></button> -->
+			<button id="button-desktop" type="submit">Rechercher</button>
+			<!-- <i class="fas fa-search"></i> -->
+			<button id="button-mobile" type="submit" i class="fas fa-search"></i></button>
 		</div>
 		<div class="filters">
 			<p class="index-filters">Filtres</p>
