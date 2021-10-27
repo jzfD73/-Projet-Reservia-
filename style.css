@@ -33,6 +33,7 @@ main{
 .logo{
     width: 150px;
     padding-left: 40px;
+    /* align-self: auto; */
 }
 
 ul{
@@ -58,7 +59,14 @@ li{
     color:  #0065fc;
     border-top: 2px solid #0065fc;
 }
-
+.navbars-links1{
+    display: flex; 
+    margin-left: auto;  
+}
+.navbars-links2{
+    /* align-self: baseline; */
+    margin-top: 12px
+}
 
 .accomodation-link {
     /* margin: 20px; */
@@ -69,13 +77,6 @@ li{
     padding-right: 20px;
     padding-bottom: 40px;
 }
-.navbars-links1{
-    display: flex;
-    
-}
-
-
-
 
 .activities-link {
     border-top: 2px solid white ;
@@ -246,6 +247,7 @@ h2{
     font-weight: bold;
 }
 
+
 h4{
     font-weight: bold;
 }
@@ -281,20 +283,12 @@ h4{
     padding-top: 15px;
 }
 
-.by-price{
+.C1general{
     display: flex;
     border-radius: 25px;
     justify-content: space-around;
     padding-bottom: 25px;
     flex-wrap: wrap;
-
-}
-
-.by-stars{
-    display: flex;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-
 
 }
 
@@ -530,10 +524,11 @@ h4{
 }
 
 /* RESPONSIVE */
+                /*MOBILE*/
 
 @media all and (min-width: 310px) and (max-width: 768px){
     body{
-        margin: none;
+        margin: 0px;
         width: 100%;
     }
     main{
@@ -589,7 +584,7 @@ h4{
         border-radius: 15px;   
     }
     .searchbar{
-        width: 100%;
+        width: 90%;
     }
     .filter{
         margin: 0px 20px 0px 0px;
@@ -601,7 +596,9 @@ h4{
     .links-sections-filters{
         padding-bottom: 10px;
     }
-
+    .information{
+        margin: 20px 0px 20px 0px;
+    }
     .section-one{
         flex-direction: column-reverse;
         padding: 0px;
@@ -610,8 +607,12 @@ h4{
         width: 100%;
         background-color: white;
     }
+    #accomodations{
+        padding-left: 30px;
+    }
     .more-for-C1{
         padding-top: initial;
+        padding-left: 30px;
     }
     .container2{
         flex-wrap: wrap;
@@ -660,10 +661,16 @@ h4{
     }
 
 
-
+                    /*TABLETTE*/
 }
-@media all and (min-width: 479px) and (max-width: 768px){
-    
+@media all and (min-width: 458px) and (max-width: 751px){
+    #desktop{
+        width: 100%;
+        display: flex;
+    }
+    .navbar{
+        display: ;
+    }
     #mobile{
         display: none;
     }
@@ -672,7 +679,9 @@ h4{
     }
 }
 @media all and (min-width: 768px) and (max-width:1440PX){
-    
+    #desktop{
+        width: 100%;
+    }
     #mobile{
         display: none;
     }
