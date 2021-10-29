@@ -172,6 +172,7 @@ h1 {
     flex-wrap: wrap;
 }
 .filters-links{
+    display: flex;
     margin: 8px;
     padding: 10px 20px 10px 20px;
     /* padding-left: 20px;
@@ -197,7 +198,7 @@ h1 {
 .filter{
     border: 2px solid #deebff;
     border-radius: 50px;
-    margin: 0px 20px 10px 0px;
+    margin: 0px 20px 0px 0px;
     padding-right: 20px;
 }
 .filter-icons-color{
@@ -240,17 +241,15 @@ h1 {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    /* flex-shrink: initial; */
 }
 h2{
     padding: 5px 0px 20px 10px;
     font-weight: bold;
 }
-
-
 h4{
     font-weight: bold;
 }
+
 .more-for-C1{
     padding-left: 20px;
     padding-top: 35px;
@@ -526,7 +525,7 @@ h4{
 /* RESPONSIVE */
                 /*MOBILE*/
 
-@media all and (min-width: 310px) and (max-width: 768px){
+@media all and  (max-width: 768px){
     body{
         margin: 0px;
         width: 100%;
@@ -534,6 +533,8 @@ h4{
     main{
         margin-left: 0px;
     }
+
+    /* header */
     #desktop{
         display: none;
     }
@@ -557,21 +558,14 @@ h4{
         border-top: 2px solid white;
         border-bottom: 3px solid #0065fc;
     }
-    
-    .searchbar input{
-        width: 240px;
-    }
-    /* .searchbar button{
-        border: none;
-        width: 40%;
-        background-color: #0065fc;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-        border-radius: 15px;
-        border-bottom-right-radius: 15px;
-    } */
 
+    /* searcbar */
+    .searchbar{
+        width: 90%;
+    }
+    .searchbar input{
+        width: 50%;
+    }
     #button-desktop{
         display: none;
     }
@@ -583,22 +577,31 @@ h4{
         font-size: 1em;
         border-radius: 15px;   
     }
-    .searchbar{
-        width: 90%;
-    }
+    
+    /* filters */
     .filter{
         margin: 0px 20px 10px 0px;
     }
     .filters-links{
+        flex-wrap: wrap;
         margin: 10px 0px 0px 0px;
         padding: 0px;
     }
     .links-sections-filters{
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
     }
-    .information{
+
+    /* information container */
+    .info-container{
+        display: flex;
         margin: 20px 0px 20px 0px;
     }
+    .icon-info{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+
+    /* section 1 - containers 1 & 2 */
     .section-one{
         flex-direction: column-reverse;
         padding: 0px;
@@ -607,34 +610,41 @@ h4{
         width: 100%;
         background-color: white;
     }
+    
     #accomodations{
         padding-left: 30px;
     }
-    .more-for-C1{
-        padding-top: initial;
-        padding-left: 30px;
+    .thumbnailsC1{
+        width: 87%;
+        margin-left: 20px;
+        margin-bottom: 15px;
     }
-    .container2{
-        flex-wrap: wrap;
-        width: 100%;
-        border-radius: initial;
-    }
-
     .by-price{
         /* flex-wrap: wrap; */
       flex-direction: column;
       width: 100%;
       padding-bottom: 20px;
     }
-
-    .thumbnailsC1{
-        width: 87%;
-        margin-left: 20px;
-        margin-bottom: 15px;
+    .more-for-C1{
+        padding-top: initial;
+        padding-left: 30px;
+    }
+        /* container 2 */
+    .container2{
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: initial;
+        /* padding: 0px 0px 0px 25px; */
+    }
+    .icon-C2{
+        padding-bottom: 10px;  
+        margin-left: 88px;     
     }
     .thumbnailsC2{
-        width: 100%;
+        width: 87%;
     }
+
+    /* section 2 - container 3 */
     .container3{
         flex-direction: column;
         width: 100%;
@@ -642,9 +652,10 @@ h4{
     }
     #activities{
         margin-left: 10px;
+        margin-top: 20px;
     }
     .thumbnailsgeneralC3M{
-        width: 82%;
+        width: 87%;
         margin-left: 20px;
         margin-bottom: 20px;
         height: 200px;
@@ -652,7 +663,8 @@ h4{
     .photosgeneralC3M{
         height: 140px;
     }
-    
+
+    /* footer */
     .footer{
         flex-direction: column;
     }
@@ -663,22 +675,24 @@ h4{
 
                     /*TABLETTE*/
 }
-@media all and (min-width: 458px) and (max-width: 751px){
+@media all and (min-width: 768px) and (max-width: 960px){
     #desktop{
         width: 100%;
         display: flex;
     }
-    .navbar{
-        display: ;
-    }
+    
     #mobile{
         display: none;
     }
     #button-mobile{
         display: none;
+    }.section1{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
-@media all and (min-width: 768px) and (max-width:1440PX){
+
+@media all and (min-width: 960px) and (max-width:1440PX){
     #desktop{
         width: 100%;
     }
@@ -688,7 +702,7 @@ h4{
     #button-mobile{
         display: none;
     }
-}
+    
 
 
 
