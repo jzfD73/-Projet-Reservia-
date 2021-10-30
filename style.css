@@ -19,9 +19,9 @@ body{
 
 /*HEADER*/
 
-main{
+/* main{
     margin-left: 20px;
-}
+} */
 
 .navbar {
     display: flex;
@@ -127,13 +127,13 @@ h1 {
 
 .searchbar{
     margin: 10px 0 10px 20px;
-    width: 34%;
+    width: 60%;
     height: 50px;
     display: flex;
 }
 .searchbar input{
     outline: none;
-    width: 350px;
+    width: 285px;
     border: none;
     border-bottom: 1px solid #f2f2f2;
     border-top: 1px solid #f2f2f2;
@@ -149,7 +149,7 @@ h1 {
 
 .searchbar button{
     border: none;
-    width: 150px;
+    width: 120px;
     background-color: #0065fc;
     color: white;
     font-size: 1em;
@@ -166,7 +166,7 @@ h1 {
     margin-top: 5px;
     padding-left: 20px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     font-size: 1.06em;
     font-weight: bold;
     flex-wrap: wrap;
@@ -198,7 +198,7 @@ h1 {
 .filter{
     border: 2px solid #deebff;
     border-radius: 50px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 20px 10px 0px;
     padding-right: 20px;
 }
 .filter-icons-color{
@@ -266,6 +266,9 @@ h4{
     justify-content: space-around;
     /* flex-wrap: wrap; */
 }
+#accomodations{
+    padding: 15px 0px 20px 15px;
+}
 .thumbnailsC1{
     border-radius: 25px;
     border: 5px solid white;
@@ -303,9 +306,7 @@ h4{
 
 /* MAIN - SECTION One - LES PLUS POPULAIRES */
 
-/* #activties{
-    padding-left: 5px;
-} */
+
 .container2{
     padding: 10px;
     background-color: #f2f2f2;
@@ -317,12 +318,15 @@ h4{
     display: flex;
     flex-wrap: wrap;
 }
+#most-popular{
+    padding: 15px 20px 20px 15px;
+}
 .title-icon-C2{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .icon-chart{
-    padding-left: 60px;
+    padding-left: 30px;
 }
 
 .thumbnailsC2 .links-sections {
@@ -330,7 +334,7 @@ h4{
  }
 
 .thumbnailsC2{
-    width: 100%;
+    width: 90%;
     height: 150px;
     border: 5px solid white;
     border-radius: 25px;
@@ -393,7 +397,7 @@ h4{
 .container3{
     display: flex;
     justify-content: space-between;
-    width: 1290px;
+    /* width: 1290px; */
     height: 500px;
 }
 
@@ -595,6 +599,7 @@ h4{
     .info-container{
         display: flex;
         margin: 20px 0px 20px 0px;
+        align-items: center;
     }
     .icon-info{
         margin-right: 0px;
@@ -610,21 +615,20 @@ h4{
         width: 100%;
         background-color: white;
     }
+    .C1general{
+        justify-content: space-between;
+    }
+   
     
     #accomodations{
-        padding-left: 30px;
+        padding-left: 20px;
     }
     .thumbnailsC1{
-        width: 87%;
+        width: 90%;
         margin-left: 20px;
         margin-bottom: 15px;
     }
-    .by-price{
-        /* flex-wrap: wrap; */
-      flex-direction: column;
-      width: 100%;
-      padding-bottom: 20px;
-    }
+    
     .more-for-C1{
         padding-top: initial;
         padding-left: 30px;
@@ -634,29 +638,41 @@ h4{
         flex-wrap: wrap;
         width: 100%;
         border-radius: initial;
-        /* padding: 0px 0px 0px 25px; */
+        padding: 0px 0px 0px 15px;
+        justify-content: space-between;
+    }
+    #most-popular{
+        padding-left: 15px;
     }
     .icon-C2{
         padding-bottom: 10px;  
-        margin-left: 88px;     
+        margin-left: 50px;     
+    }
+    .most-popular{
+        width: 100%;
     }
     .thumbnailsC2{
-        width: 87%;
+        width: 90%;
     }
 
     /* section 2 - container 3 */
+    .section2{
+        padding-left: 5px;
+    }
     .container3{
         flex-direction: column;
         width: 100%;
         height: 100%;
+        padding-right: 15px;
+        justify-content: space-between;
     }
     #activities{
         margin-left: 10px;
         margin-top: 20px;
     }
     .thumbnailsgeneralC3M{
-        width: 87%;
-        margin-left: 20px;
+        width: 92%;
+        margin-left: 10px;
         margin-bottom: 20px;
         height: 200px;
     }
@@ -686,9 +702,51 @@ h4{
     }
     #button-mobile{
         display: none;
-    }.section1{
+    }
+    .filters{
+        width: 95%;
+        padding-left: 0px;
+        margin-left: 20px;
+        align-items: baseline;
+    }
+    .filters-links{
+        padding: 10px 20px 10px 0px;
+    }
+    .info-container{
         display: flex;
+        align-items: center;
+    }
+    .info-icon{
+        margin-left: 20px;
+    }
+    .information{
+        padding-left: 0px;
+    }
+    
+    .section-one{
         flex-direction: column-reverse;
+        width: 100%;
+    }
+    .container1{
+        width: auto;
+        margin-top: 20px;
+
+    }
+    .container2{
+        width: 100%;
+    }
+    .most-popular{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .infos-th-C2{
+        padding-left: 20px;
+        padding-top: 15px;
+        font-size: 14px;
+    }
+    .container3{
+        width: 95%;
     }
 }
 
@@ -702,6 +760,22 @@ h4{
     #button-mobile{
         display: none;
     }
+
+    .info-container{
+        display: flex;
+        align-items: center;
+    }
+    .info-icon{
+        margin-left: 20px;
+    }
+    .information{
+        padding-left: 0px;
+    }
+    /* .infos-th-C2{
+        padding-left: 20px;
+        padding-top: 15px;
+        font-size: 14px;
+    } */
     
 
 
