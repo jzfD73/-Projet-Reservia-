@@ -429,7 +429,7 @@ h4{
 }
 .thumbC4-C5{
     width: 50%;
-    margin-right: 15px;
+    /* margin-right: 15px; */
 }
 
 .thumbnailsC4{
@@ -519,12 +519,13 @@ h4{
 
 /* FOOTER */
 
-.footer{
+footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
     margin-top: 20px;
+    padding: 40px;
 
 }
 
@@ -534,9 +535,7 @@ h4{
     padding-top: 10px;
 
 }
-.footer{
-    padding: 40px;
-}
+
 
 .navfooter .links-sections{
     padding-top:10px ;
@@ -672,7 +671,8 @@ h4{
     }
 
     /* section 2 - container 3 */
-    .section2{
+
+    /* .section2{
         padding-left: 5px;
     }
     .container3{
@@ -685,9 +685,16 @@ h4{
     #activities{
         margin-left: 10px;
         margin-top: 20px;
+    } */
+   
+    
+    .container3{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
     .thumbnailsgeneralC3M{
-        width: 92%;
+        width: 95%;
         margin-left: 10px;
         margin-bottom: 20px;
         height: 200px;
@@ -695,9 +702,26 @@ h4{
     .photosgeneralC3M{
         height: 140px;
     }
+    .global-thumbnails{
+        flex-direction: column;
+        width: 95%;
+    }
+    /* .thumbnailsC3{
+        width: 100%;
+        height: 200px;
+    } */
+    .photosC3{
+        height: 70%;
+    }
+    .thumbC4-C5{
+        width: 100%;
+    }
+    .thumbC6-C7{
+        width: 100%;
+    }
 
     /* footer */
-    .footer{
+    footer{
         flex-direction: column;
     }
     .info-footer{
@@ -762,19 +786,65 @@ h4{
         font-size: 14px;
     }
     .container3{
-        width: 95%;
+        width: 99%;
+        flex-direction: column;
+    }  
+    .global-thumbnails{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 15px;
+
     }
    
     .thumbnailsC3{
-        width: 100%;
+        width: 48%;
+        height: 100%;
+    }
+    .photosC3{
+        height: 70%;
     }
     .thumbC4-C5{
         display: flex;
         flex-direction: row;
+        width: 100%;
+        margin-right: 15px;
+    }
+    .thumbnailsC4{
+        height: 100%;
+        width: 95%;
+        /* margin-right: 8px; */
+    }
+    .photosC4{
+        height: 70%;
+    }
+    .thumbnailsC5{
+        height: 100%;
+        width: 95%;
+        margin-left: 16px;
+    }
+    .photosC5{
+        height: 70%;
     }
     .thumbC6-C7{
         display: flex;
         flex-direction: row;
+        width: 100%;
+        margin-right: 15px;
+    }
+    .thumbnailsC6{
+        height: 100%;
+        width: 95%;
+    }
+    .photosC6{
+        height: 70%;
+    }
+    .thumbnailsC7{
+        height: 100%;
+        width: 95%;
+        margin-left: 16px;
+    }
+    .photosC7{
+        height: 70%;
     }
 }
 
