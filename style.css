@@ -12,16 +12,13 @@
 body{
     /* font-family: Raleway, sans-serif; */
     font-family: Reservia;
-    /* margin-left: 20px; */
 
 }
 
 
 /*HEADER*/
 
-/* main{
-    margin-left: 20px;
-} */
+
 
 .navbar {
     display: flex;
@@ -33,26 +30,11 @@ body{
 .logo{
     width: 150px;
     padding-left: 40px;
-    /* align-self: auto; */
 }
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-li{
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-}
-
 
 .navbar-links {
     text-decoration: none;
     color: #0065fc;
-
 }
 
 .navbar-links:hover{
@@ -64,12 +46,10 @@ li{
     margin-left: auto;  
 }
 .navbars-links2{
-    /* align-self: baseline; */
     margin-top: 12px
 }
 
 .accomodation-link {
-    /* margin: 20px; */
     border-top: 2px solid white;
     color: black;
     padding-top: 50px;
@@ -98,7 +78,6 @@ li{
     padding-bottom: 40px;
 }
 
-
 /* MAIN - TITRE - SUBTITLE- */
 
 h1 {
@@ -123,7 +102,6 @@ h1 {
     border-bottom-left-radius: 25%;
     padding: 15px 15px;
 }
-
 
 .searchbar{
     margin: 10px 0 10px 20px;
@@ -158,8 +136,18 @@ h1 {
     border-bottom-right-radius: 15px;
 }
 
-
   /* FILTERS */
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
 
 .filters{
     width: 100%;
@@ -175,10 +163,6 @@ h1 {
     display: flex;
     margin: 8px;
     padding: 10px 20px 10px 20px;
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
 .links-sections{
@@ -186,21 +170,13 @@ h1 {
     color: black;
 }
 
-/* .filter{
-    border: 2px solid #deebff;
-    border-radius: 50px;
-    margin: 0px 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px ;
-} */
 .filter{
     border: 2px solid #deebff;
     border-radius: 50px;
     margin: 0px 20px 10px 0px;
     padding-right: 20px;
 }
+
 .filter-icons-color{
     color: #0065fc;
     background-color: #deebff;
@@ -209,13 +185,13 @@ h1 {
     margin-right: 10px;
     padding: 10px;
 }
+
 .filter-icons-color:hover{
     color: #deebff;
     background-color: #0065fc;
 }
 
-
-  /* INFORMATION */
+      /* INFORMATION */
 
 .information{
     padding-left: 20px;
@@ -227,12 +203,7 @@ h1 {
     border-radius: 50%;
     padding: 5px 10px;
     margin-right: 20px;
-
 }
-
-/* ATTRIBUTS - lINKS */
-
-
 
 /* MAIN - SECTION One - HEBERGEMENTS A  MARSEILLE*/
 
@@ -259,72 +230,65 @@ h4{
     padding: 10px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    /* width: 850px; */
     width: 65%;
-    /* height: 620px; */
-
     justify-content: space-around;
-    /* flex-wrap: wrap; */
 }
+
 #accomodations{
     padding: 15px 0px 20px 15px;
 }
+
+.C1general{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
 .thumbnailsC1{
     border-radius: 25px;
-    border: 5px solid white;
     width: calc(100% / 3 - 25px);
     margin-bottom: 25px;
     height: 200px;
     background-color: white;
     box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray;
-
 }
 
 .infos-th-C1{
-    padding-left: 20px;
-    padding-top: 15px;
-}
-
-.C1general{
-    display: flex;
-    border-radius: 25px;
-    justify-content: space-around;
-    padding-bottom: 25px;
-    flex-wrap: wrap;
-
+    padding-left: 15px;  
 }
 
 .photosC1{
     width: 100%;
     height: 110px;
     padding-top: 0px;
+    border: 5px solid white;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
     object-position: center left;
 }
 
-/* MAIN - SECTION One - LES PLUS POPULAIRES */
+  /* MAIN - SECTION One - LES PLUS POPULAIRES */
 
 
 .container2{
     padding: 10px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    /* width: 400px; */
     width: 33%;
-    /* height: 620px; */
-
     display: flex;
     flex-wrap: wrap;
 }
+
 #most-popular{
     padding: 15px 20px 20px 15px;
 }
+
 .title-icon-C2{
     display: flex;
     align-items: baseline;
 }
+
 .icon-chart{
     padding-left: 30px;
 }
@@ -336,7 +300,6 @@ h4{
 .thumbnailsC2{
     width: 90%;
     height: 150px;
-    border: 5px solid white;
     border-radius: 25px;
     justify-content: space-between;
     margin-left: 15px;
@@ -346,11 +309,11 @@ h4{
     box-shadow: 2px 2px 5px lightgray ;
 }
 
-
 .photosC2{
     width: 35%;
-    height: 140px;
+    height: 150px;
     padding-top: 0px;
+    border: 5px solid white;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     object-fit: cover;
@@ -362,10 +325,13 @@ h4{
 .infos-th-C2{
     padding-left: 20px;
     padding-top: 15px;
+    font-size: 15px;
 }
+
 .night-price{
     padding-top: 5px;
 }
+
 .price{
     font-weight: bold;
 }
@@ -389,7 +355,6 @@ h4{
 
 
 .section-two{
-    /* width: 1290px; */
     width: 100%;
     padding-left: 20px;
 }
@@ -397,7 +362,6 @@ h4{
 .container3{
     display: flex;
     justify-content: space-between;
-    /* width: 1290px; */
     height: 500px;
 }
 .global-thumbnails{
@@ -406,7 +370,6 @@ h4{
 }
 
 .thumbnailsC3{
-    /* width: 300px; */
     width: 50%;
     margin-right: 15px;
     height: 450px;
@@ -414,7 +377,6 @@ h4{
     border-radius: 25px;
     box-shadow: 2px 2px 5px lightgray;
 }
-
 .photosC3{
     width: 100%;
     height: 400px;
@@ -423,24 +385,17 @@ h4{
     border-top-right-radius: 25px;
     object-fit: cover;
 }
-.place{
-    padding-left: 15px;
-    padding-top: 10px;
-}
+
 .thumbC4-C5{
     width: 50%;
-    /* margin-right: 15px; */
 }
-
 .thumbnailsC4{
-    /* width: 300px; */
     width: 95%;
     height: 250px;
     border-radius: 25px;
     border: 5px solid white;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px lightgray;
-
 }
 .photosC4{
     width: 100%;
@@ -452,14 +407,12 @@ h4{
 }
 
 .thumbnailsC5{
-    /* width: 300px; */
     width: 95%;
     height: 180px;
     border-radius: 25px;
     border: 5px solid white;
     box-shadow: 2px 2px 5px lightgray;
 }
-
 .photosC5{
     width: 100%;
     height: 120px;
@@ -468,12 +421,12 @@ h4{
     border-top-right-radius: 25px;
     object-fit: cover;
 }
+
 .thumbC6-C7{
     width: 50%;
     
 }
 .thumbnailsC6{
-    /* width: 300px; */
     width: 95%;
     height: 180px;
     border: 5px solid white;
@@ -491,7 +444,6 @@ h4{
 }
 
 .thumbnailsC7{
-    /* width: 300px; */
     width: 95%;
     height: 250px;
     border: 5px solid white;
@@ -506,6 +458,11 @@ h4{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
+}
+
+.place{
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
 /* ANIMATIONS IMAGES */
@@ -526,22 +483,19 @@ footer{
     background-color: #f2f2f2;
     margin-top: 20px;
     padding: 40px;
-
 }
-
 .navfooter{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
-
 }
-
-
 .navfooter .links-sections{
     padding-top:10px ;
 }
 
-/* RESPONSIVE */
+
+        /* RESPONSIVE */
+
                 /*MOBILE*/
 
 @media all and  (max-width: 768px){
@@ -553,9 +507,9 @@ footer{
         margin-left: 0px;
     }
 
-    /* header */
+/* header */
     #desktop{
-        display: none;
+        display:none;
     }
     .navbars-links1{
         flex-direction: row;
@@ -566,8 +520,6 @@ footer{
         width: 50%;
     }
     .reg-act-links{
-        /* padding-left: 63px; */
-        /* padding-right: 75px; */
         border-bottom: 3px solid #f2f2f2;
         font-weight: 500;
         width: 100%;
@@ -578,7 +530,7 @@ footer{
         border-bottom: 3px solid #0065fc;
     }
 
-    /* searcbar */
+/* searcbar */
     .searchbar{
         width: 90%;
     }
@@ -596,8 +548,8 @@ footer{
         font-size: 1em;
         border-radius: 15px;   
     }
-    
-    /* filters */
+   
+/* filters */
     .filter{
         margin: 0px 20px 10px 0px;
     }
@@ -606,11 +558,8 @@ footer{
         margin: 10px 0px 0px 0px;
         padding: 0px;
     }
-    .links-sections-filters{
-        /* padding-bottom: 10px; */
-    }
 
-    /* information container */
+/* information container */
     .info-container{
         display: flex;
         margin: 20px 0px 20px 0px;
@@ -621,7 +570,7 @@ footer{
         margin-left: 20px;
     }
 
-    /* section 1 - containers 1 & 2 */
+/* section 1 - containers 1 & 2 */
     .section-one{
         flex-direction: column-reverse;
         padding: 0px;
@@ -634,21 +583,20 @@ footer{
         justify-content: space-between;
     }
    
-    
     #accomodations{
         padding-left: 20px;
     }
     .thumbnailsC1{
-        width: 90%;
+        width: 91%;
         margin-left: 20px;
         margin-bottom: 15px;
     }
-    
     .more-for-C1{
         padding-top: initial;
         padding-left: 30px;
     }
-        /* container 2 */
+
+/* container 2 */
     .container2{
         flex-wrap: wrap;
         width: 100%;
@@ -670,24 +618,7 @@ footer{
         width: 90%;
     }
 
-    /* section 2 - container 3 */
-
-    /* .section2{
-        padding-left: 5px;
-    }
-    .container3{
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        padding-right: 15px;
-        justify-content: space-between;
-    }
-    #activities{
-        margin-left: 10px;
-        margin-top: 20px;
-    } */
-   
-    
+/* section 2 - container 3 */
     .container3{
         flex-direction: column;
         width: 100%;
@@ -706,10 +637,6 @@ footer{
         flex-direction: column;
         width: 95%;
     }
-    /* .thumbnailsC3{
-        width: 100%;
-        height: 200px;
-    } */
     .photosC3{
         height: 70%;
     }
@@ -720,29 +647,36 @@ footer{
         width: 100%;
     }
 
-    /* footer */
+/* footer */
     footer{
         flex-direction: column;
+        margin-top: 40px;
     }
     .info-footer{
         padding-bottom: 30px;
-    }
-
-
-                    /*TABLETTE*/
+    }                   
 }
+
+                     /*TABLETTE*/
+
+
 @media all and (min-width: 768px) and (max-width: 960px){
+/*header*/    
     #desktop{
         width: 100%;
-        display: flex;
+        display: contents;
     }
     
     #mobile{
         display: none;
     }
+
+/*searchbar*/    
     #button-mobile{
         display: none;
     }
+
+/*filters*/    
     .filters{
         width: 95%;
         padding-left: 0px;
@@ -752,6 +686,8 @@ footer{
     .filters-links{
         padding: 10px 20px 10px 0px;
     }
+
+/*information*/    
     .info-container{
         display: flex;
         align-items: center;
@@ -762,7 +698,8 @@ footer{
     .information{
         padding-left: 0px;
     }
-    
+
+/*section-one*/    
     .section-one{
         flex-direction: column-reverse;
         width: 100%;
@@ -770,7 +707,6 @@ footer{
     .container1{
         width: auto;
         margin-top: 20px;
-
     }
     .container2{
         width: 100%;
@@ -781,10 +717,15 @@ footer{
         flex-direction: row;
     }
     .infos-th-C2{
-        padding-left: 15px;
-        padding-top: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
         font-size: 14px;
     }
+    .icons-starsC2{
+        padding-top: 20px;
+    }
+
+/*section-two*/    
     .container3{
         width: 99%;
         flex-direction: column;
@@ -793,9 +734,7 @@ footer{
         width: 100%;
         height: 50%;
         margin-bottom: 15px;
-
     }
-   
     .thumbnailsC3{
         width: 48%;
         height: 100%;
@@ -812,7 +751,6 @@ footer{
     .thumbnailsC4{
         height: 100%;
         width: 95%;
-        /* margin-right: 8px; */
     }
     .photosC4{
         height: 70%;
@@ -855,6 +793,7 @@ footer{
     #mobile{
         display: none;
     }
+
     #button-mobile{
         display: none;
     }
@@ -869,13 +808,4 @@ footer{
     .information{
         padding-left: 0px;
     }
-    /* .infos-th-C2{
-        padding-left: 20px;
-        padding-top: 15px;
-        font-size: 14px;
-    } */
-    
-
-
-
-
+}    
