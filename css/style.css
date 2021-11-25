@@ -761,7 +761,7 @@ footer{
     }
 }
 
-@media all and (min-width: 960px) and (max-width:1440PX){
+@media all and (min-width: 960px) {
     #desktop{
         width: 100%;
     }
